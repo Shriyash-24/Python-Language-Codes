@@ -31,5 +31,11 @@ print("JavaScript" in lang) # F
 print("Python" not in lang) # F
 print("JavaScript" not in lang) # T
 
+# min() and max() are like len() functions, it can work on other datatypes too.
+numbers = [10,4,-1,20,5.5,7,1]
+# numbers = [10,4,-1,20,5.5,7,1, "Hi"] # Can't have strings like that when doing below operations,
+print(f"Smallest Number: {min(numbers)}") # -1
+print(f"Largest Number: {max(numbers)}") # 20
+print(f"Total Of Numbers: {sum(numbers)}") # 46.5
 
 
