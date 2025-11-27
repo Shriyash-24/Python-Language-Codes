@@ -1,0 +1,4 @@
+
+This content has been written by 5-appending.py
+'a' mode is used to add new content at the end of the file.
+Good bye!
