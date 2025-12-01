@@ -1,0 +1,1 @@
+# Installed psycopg2 by "pip install psycopg2" command in a virtual environment.
