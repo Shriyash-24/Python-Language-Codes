@@ -1,0 +1,43 @@
+# Same code as 7.
+# Main work is in confirm.html
+
+# BEFORE
+'''
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Confirmation</title>
+</head>
+<body>
+
+</body>
+</html>
+'''
+
+# AFTER
+'''
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Confirmation</title>
+</head>
+<body>
+    <h1>Registration Successful</h1>
+    <table>
+        <tr>
+            <td>Name</td><td>{{name}}</td>
+        </tr>
+        <tr>
+            <td>City</td><td>{{city}}</td>
+        </tr>
+        <tr>
+            <td>Phone Number</td><td>{{phonenumber}}</td>
+        </tr>
+    </table>
+</body>
+</html>
+'''
