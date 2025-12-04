@@ -1,0 +1,17 @@
+<!--This template is used for all posts, that's why we need to make HTML file dynamic-->
+
+{% extends "base.html" %}
+
+{% block_page title %}
+    {{ blog_name|title }}
+{% endblock %}
+
+{% block body_content %}
+    {% include "blogs/includes/header.html" %}
+    <h1>{{ blog_name|title }} Blog Post</h1>
+    {% if blog_text %}
+        <h2>{{ blog_text }}</h2>
+    {% else %}
+        <h2>"Blog is in progress...</h2>
+    {% endif %}
+{% endblock %}
