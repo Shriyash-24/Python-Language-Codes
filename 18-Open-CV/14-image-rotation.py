@@ -10,7 +10,6 @@ angle = 90
 # OpenCV rotates counter-clockwise by default, so 90 degree CCW.
 # Negative angle is CW.
 
-
 r = cv2.getRotationMatrix2D(center, angle, 1)
 # getRotationMatrix2D tells openCV where center, degree and how much to scale.
 # scale --> 1 (original), 2 (zoom in), 0.5 (shrink)

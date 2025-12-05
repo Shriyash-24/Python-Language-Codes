@@ -19,10 +19,7 @@ ksize = (7,1) # ksize is kernel size, it should be +ve and odd.
 # 0 means automatically.
 sigmax = 0
 sigmay = 0
-
-
 blur = cv2.GaussianBlur(resize,ksize,0)
 cv2.imshow("Output", blur)
-
 cv2.waitKey(0)
 cv2.destroyAllWindows()

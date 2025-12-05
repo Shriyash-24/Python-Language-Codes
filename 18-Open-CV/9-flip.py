@@ -17,8 +17,5 @@ cv2.imshow("Flip1", flip1) # HORIZONTAL FLIP
 flip2 = cv2.flip(resized, -1)
 cv2.imshow("Flip2", flip2) # HORIZONTAL & VERTICAL
 
-
-
-
 cv2.waitKey(0)
 cv2.destroyAllWindows()
