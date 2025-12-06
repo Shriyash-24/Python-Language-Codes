@@ -2,33 +2,38 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-from selenium.webdriver.common.by import By
-
 driver = webdriver.Edge()
+driver.maximize_window()
 
 driver.get("https://www.facebook.com")
+time.sleep(3)
 
 email_element = driver.find_element(By.XPATH, './/*[@id="email"]')
 email_element.send_keys('8668727382')
 
+time.sleep(1)
+
 pass_element = driver.find_element(By.XPATH, './/*[@id="pass"]')
-pass_element.send_keys('Lol@2004')
+pass_element.send_keys('Shriyash@2004')
 
 time.sleep(3)
 
 element = driver.find_element(By.NAME, 'login')
 element.click()
-time.sleep(80)
+time.sleep(30)
 
-status_element = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div/div[1]')
-status_element.click()
-time.sleep(5)
+composer = driver.find_element(By.XPATH, ".//span[contains(text(), \"What's on your mind\")]")
+composer.click()
+time.sleep(3)
 
-status_element.send_keys('Hi there.')
-time.sleep(5)
+text_area = driver.find_element(By.XPATH, './/div[@data-lexical-editor = "true"]')
+text_area.send_keys('Automated Post')
 
-post = driver.find_element(By.CLASS_NAME, 'x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft')
+time.sleep(3)
+
+post = driver.find_element(By.XPATH, './/div[@aria-label="Post"]')
 post.click()
 
-
+time.sleep(10)
+driver.quit()
 
